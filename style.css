@@ -10,8 +10,11 @@
 body {
     background-image: url('https://images.pexels.com/photos/1563355/pexels-photo-1563355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 1300px;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
 .search-box {
@@ -148,7 +151,10 @@ body {
 
 .clock {
     position: fixed;
-    left: 42%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -181,7 +187,7 @@ body {
 @media only screen and (max-width:500px) {
     .clock {
         top: 15vh;
-        left: 22%;
+        width: 200px;
     }
 }
 
