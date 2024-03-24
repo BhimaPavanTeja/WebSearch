@@ -74,7 +74,7 @@ function openGemini() {
 
 //typing-animation
 const typingText = document.querySelector('.typing-animation');
-const text = ["Hello Pavan Teja, let's explore!"];
+const text = ["Hello Pavan Teja, let's explore!","Work More, Be Productive!","Focus one thing, Be Smart and fast!"];
 let count = 0;
 let index = 0;
 let currentText = '';
