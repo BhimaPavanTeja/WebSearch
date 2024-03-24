@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body-a">
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="./pavan.png" alt="" width="50" height="50">
+            </div>
+            <div class="clock">
+                <div class="time">
+                    <span id="hours">00</span><a id="hour-colon">:</a><span id="minutes">00</span> <span id="AmPm">00</span>
+                </div>
+                <div class="date">
+                    <span id="date-display">00</span>, <span id="month">march</span> <span id="year">00</span>
+                </div>
+            </div>
+            <div class="menu-bar">
+                <span class="material-symbols-outlined" id="menu-icon" onclick="openMenu()">widgets</span>
+                <ul>
+                    <div class="menu-1" onclick="openYoutube()">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Emblem.png" alt="" width="60" height="32">
+                        <li>youtube</li>
+                    </div>
+                    <div class="menu-2" onclick="openGmail()">
+                        <img src="https://logolook.net/wp-content/uploads/2021/06/Gmail-Logo.png" alt="" width="60" height="32">
+                        <li>gmail</li>
+                    </div>
+                    <div class="menu-3" onclick="openPhotos()">
+                        <img src="https://1000logos.net/wp-content/uploads/2020/05/Google-Photos-logo-640x640.png" alt="" width="40" height="40">
+                        <li>photos</li>
+                    </div>
+                    <div class="menu-4" onclick="openDrive()">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/11/Google-Drive-Logo.png" alt="" width="68" height="40">
+                        <li>drive</li>
+                    </div>
+                    <div class="menu-5" onclick="openCalendar()">
+                        <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-calendar-1024.png" alt="" width="55" height="55">
+                        <li>calendar</li>
+                    </div>
+                    <div class="menu-6" onclick="openMaps()">
+                        <img src="https://logodownload.org/wp-content/uploads/2018/01/google-maps-logo-1-1.png" alt="" width="35" height="47">
+                        <li>maps</li>
+                    </div>
+                    <div class="menu-7" onclick="openGithub()">
+                        <img src="https://pluspng.com/img-png/github-logo-png-github-logos-and-usage-github-800x665.png" alt="" width="60" height="50">
+                        <li>github</li>
+                    </div>
+                    <div class="menu-8" onclick="openChatgpt()">
+                        <img src="https://static.vecteezy.com/system/resources/previews/021/059/825/original/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.jpg" alt="" width="40" height="40">
+                        <li>chatgpt</li>
+                    </div>
+                    <div class="menu-9" onclick="openGemini()">
+                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-gemini-icon.png" alt="" width="40" height="40">
+                        <li>gemini</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <h1 class="typing-animation">Hi pavan teja!</h1>
+        </div>
+        <div class="search-box">
+            <input type="text" id="search-input">
+            <span class="material-symbols-outlined" id="icon">search</span>
+        </div>
+        <div class="customize-bg-img">
+            <p id="custom-p">edit background</p>
+            <span class="material-symbols-outlined" id="edit">edit</span>
+        </div>
+        <div class="bg-img-upload">
+            <span class="material-symbols-outlined" id="bg-close">close</span>
+            <label for="text">Image Url</label>
+            <input type="text" id="bg-url">
+            <a>or</a>
+            <label for="file">Image Upload</label>
+            <input type="file" id="bg-img">
+            <button id="submit-bg">submit</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
