@@ -167,6 +167,10 @@ function updateTime() {
   });
   
   submitBg.addEventListener('click', () => {
+    if (!backgroundUrl.value && !backgroundImage.files[0]) {
+      alert('Please provide a background image URL or upload an image');
+      return;
+    }
     backgroundImageUpload.style.display = 'none';
     typingText.style.display = 'block';
     searchInput.style.display = 'block';
