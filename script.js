@@ -27,14 +27,14 @@ searchInput.addEventListener('keydown', (event) => {
 const menuIcon = document.getElementById('menu-icon');
 const menu = document.querySelector('.menu-bar ul');
 
-function openMenu() {
-    if(menu.style.display=='none'){
+menuIcon.addEventListener('click', () => {
+    if(menu.style.display==''){
         menu.style.display = 'flex';
     }else{
-        menu.style.display = 'none';
+        menu.style.display = '';
     }
 
-}
+});
 
 function openYoutube() {
     window.location.href = 'https://www.youtube.com/';
